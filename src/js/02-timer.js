@@ -63,7 +63,7 @@ const options = {
     const futureDay = selectedDates[0];
     if (todayDay >= futureDay) {
       elements.startBtn.disabled = true;
-      Notiflix.Notify.warning('Please choose a date in the future');
+      Notiflix.Notify.failure('Please choose a date in the future');
     } else {
       elements.startBtn.disabled = false;
     }
